@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/easyp128/public_html/
+    - /bin/rsync -a --exclude 'index.php' public/ $DEPLOYPATH
